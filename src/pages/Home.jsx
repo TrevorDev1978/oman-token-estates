@@ -244,7 +244,7 @@ export default function Home() {
           <div key={p.id} className="group relative">
             {/* clickable card */}
             <Link to={`/property/${p.id}`} className="block">
-              <div className="relative bg-slate-800 rounded-xl overflow-hidden shadow-lg transition hover:-translate-y-1 hover:shadow-gold/40">
+              <div className="relative bg-slate-800 rounded-xl overflow-hidden shadow-lg transition hover:-translate-y-1 hover:shadow-gold">
                 <span className="shine-pointer" />
                 <img
                   src={p.image}
