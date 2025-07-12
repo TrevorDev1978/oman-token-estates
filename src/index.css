@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.font-signature {
+  font-family: 'Great Vibes', cursive;
+}
+
+.menu-link {
+  @apply px-4 py-2 rounded-md hover:bg-slate-800 hover:text-white transition;
+}
+.dropdown-link {
+  @apply block w-full text-left px-3 py-2 rounded-md hover:bg-slate-700 hover:text-white text-sm;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ---------- custom luxury utilities ---------- */
+@layer utilities {
+  .shadow-gold\/40 {
+    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.4);
+  }
+  .shine-pointer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      130deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.15) 40%,
+      transparent 80%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-out;
+  }
+  .group:hover .shine-pointer::before {
+    transform: translateX(100%);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.font-signature {
+  font-family: 'Great Vibes', cursive;
+}
+
+.menu-link {
+  @apply px-4 py-2 rounded-md hover:text-yellow-300 transition;
+}
+.dropdown-link {
+  @apply block w-full text-left px-3 py-2 rounded-md hover:bg-slate-700 hover:text-white text-sm;
+}
+
+/* ---------- luxury hover utilities ---------- */
+@layer utilities {
+  .shadow-gold\/40 {
+    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.4);
+  }
+  .shine-pointer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      130deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.15) 40%,
+      transparent 80%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-out;
+  }
+  .group:hover .shine-pointer::before {
+    transform: translateX(100%);
+  }
+}
+
